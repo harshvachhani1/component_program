@@ -1,0 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  color: #343a40;
+}
+
+img {
+  height: 200px;
+  /* width: 400px; */
+  border-radius: 8px;
+  /* The scale property allows you to change the size of elements. */
+  transform: scale(1.5);
+  /* - | blure */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+/* ===== Main Div Design ======= */
+.carousel {
+  background-color: #027f5b;
+  width: 800px;
+  margin: 100px auto;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 86px;
+  position: relative;
+  padding: 32px 48px 32px 86px;
+}
+
+/* ===== text design =====*/
+.testimonial-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #e6fcf5;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #c3fae8;
+}
+
+.testimonial-job {
+  font-size: 12px;
+  color: #c3fae8;
+}
+
+.btn {
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* The stroke property paints along the outline of the given graphical element. */
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #027f5b;
+}
+.btn--left {
+  left: 0;
+  top: 50%;
+  /* X and Y */
+  transform: translate(-20px, -50%);
+}
+.btn--right {
+  right: 0;
+  top: 50%;
+  /* X and Y */
+  transform: translate(20px, -50%);
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 2px solid #027f5b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 30px);
+  display: flex;
+  gap: 12px;
+}
+.dot--fill {
+  background-color: #087f5b;
+}
